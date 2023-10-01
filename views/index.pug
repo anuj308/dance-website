@@ -1,0 +1,21 @@
+doctype html
+html
+  head
+    style
+      include ../static/styles.css
+  body
+    nav#navbar 
+        ul 
+            li #[a(href="/") Home]
+            li #[a(href="/") Services]
+            li #[a(href="/") About]
+            li #[a(href="/") Class Info]
+            li #[a(href="/") Contact] 
+    section#introsection 
+        | This is intro section 
+    section#sponsersection 
+        | This is sponsersectiom 
+    footer#footer 
+        | This is footer
+    script
+      include ../static/index.js
