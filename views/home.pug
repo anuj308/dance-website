@@ -1,16 +1,12 @@
-doctype html
-html
-  head
+extends  base.pug 
+
+block scripts 
+    script(src='../static/index.js')
+
+block styles
     style
       include ../static/styles.css
-  body
-    nav#navbar 
-        ul 
-            li #[a(href="/") Home]
-            li #[a(href="/") Services]
-            li #[a(href="/") About]
-            li #[a(href="/") Class Info]
-            li #[a(href="/") Contact] 
+block content 
     section#introsection 
         div Welcome to Bharat Academy 
         div.small Your journey to becoming a classical dancer begins here.
@@ -60,7 +56,3 @@ html
             img( src='../static/ISRO-Logo.webp' alt='404 Error' class="sponsorimg")
             img( src='../static/jio.svg' alt='404 Error' class="sponsorimg")
             img( src='../static/mahindra.webp' alt='404 Error' class="sponsorimg")
-    footer#footer 
-        | Copyright © 2023 BharatAcademy.com
-    script
-      include ../static/index.js

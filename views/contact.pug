@@ -1,0 +1,21 @@
+extends base.pug 
+
+block scripts 
+    script(src='../static/index.js')
+
+block styles
+    style
+      include ../static/styles.css
+      include ../static/stylescontact.css
+
+block content 
+    div.container
+        h1 Contact us
+            form(action="/contact", method="post")#fomr
+                input(type="text" name="name" placeholder="Enter your name" class="contactinput")
+                input(type="text" name="phone" placeholder="Enter your phone no" class="contactinput")
+                input(type="text" name="email" placeholder="Enter your email" class="contactinput")
+                input(type="text" name="address" placeholder="Enter your address" class="contactinput")
+                input(type="text" name="desc" placeholder="Enter your concern" class="contactinput")
+                button(class="btn")
+                    | Submit 

@@ -1,0 +1,37 @@
+h1{
+    text-align: center;
+    font-family: 'Young Serif', serif;
+}
+.container{
+    margin: 32px 2px;
+    height:80vh;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    margin:21px 2px;
+}
+.contactinput{
+    display: block;
+    padding: 4px 15px;
+    margin: 4px 3px;
+    width: 35%;
+    font-size: 15px;
+    border-radius: 9px;
+    outline:none;
+    border: 2px solid #8b7d7d;
+    font-family: 'Young Serif', serif;
+
+}
+.btn{
+    padding: 6px 23px;
+    margin: 16px 2px;
+    background-color: rgb(237 95 44);
+    border: 2px solid #060606;
+    border-radius: 15px;
+    font-size: 18px;
+    font-family: 'Young Serif', serif;
+    cursor: pointer;
+}

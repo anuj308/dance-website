@@ -1,11 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
 *{
     margin:0px;
     padding:0;
-    box-sizing: border-box;;
+    box-sizing: border-box;
+    
 }
 #navbar{
     padding: 13px 4px;
-    background-color: aqua;
+    background-color: black;
 
 }
 #navbar ul{
@@ -21,17 +23,107 @@
 #navbar ul li a{
     text-decoration: none;
     padding: 2px 18px;
+    color:white;
+    font-family: 'Young Serif', serif;
+}
+#navbar ul li a:hover{
+    font-weight: bolder;
 }
 
 #introsection{
     height: 300px;
-    background-color: red;
+    background: url("../static/welcomebg.jpg") center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    font-size: 35px;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    padding-bottom: 36px;
+    font-family: 'Young Serif', serif;
 }
-#sponsersection{
+/* types section*/
+#typessection{
+    height: auto;
+    background-color: black;
+}
+#head{ 
+    text-align: center;
+    color: white;
+    background-color: black;
+    padding: 18px 0px;
+    font-size: 30px;
+}
+#card{ 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#card h3{ 
+    font-size: 20px;
+    background-color: rgb(237 95 44);
+    border-radius: 20px;
+    font-family: 'Young Serif', serif;
+    text-align: center;
+}
+
+#card .card-box{
+    width: 21%;
+    height: auto;
+    margin: 0px 20px;
+    margin-bottom: 20px;
+    padding: 0px;
+    border-radius: 20px;
+    border: 2px solid white;
+    
+}
+#card .img img{ 
+    filter: inherit;
+    height:200px;
+    width:200px;
+    padding:2px 10px;
+    border-radius: 16px;
+}
+#card .img-text{ 
+    font-size: 10px;
+    color:white;
+    font-family: 'Young Serif', serif;
+    padding: 9px 14px;
+}
+/*sponsor*/
+#sponsorsection{
     height: 300px;
-    background-color: blue;
+    background-color: black;
 }
+#sponsorsection h2{ 
+    text-align: center;
+    font-family: 'Young Serif', serif;
+    padding-top: 29px;
+    color:rgb(229 89 39);
+}
+#sponsor{
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+#sponsor .sponsorimg{
+    width:150px;
+    height:150px;
+    margin: 29px 25px;
+
+}
+
 #footer{
-    height: 100px;
-    background-color: green;
+    background-color: black;
+    height:30px;
+    color:antiquewhite;
+    text-align: center;
+    bottom: 0px;
+}
+/*Utilities class*/
+.small{
+    font-size: 12px;
 }
